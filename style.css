@@ -2,3 +2,10 @@
 * {
     text-align: center;
 }
+h1 {
+    font-family: "Xanh Mono";
+    font-style: italic;
+}
+.topPageNav ul {
+    list-style: none;
+}
