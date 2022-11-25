@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -6,10 +7,34 @@
     <header>
         <nav class="topPageNav">
             <ul>
-                <li><a>About Us</a></li>
-                <li><a>Our Menu</a></li>
-                <li><a>Contacts</a></li>
-                <li><a>Sources</a></li>
+                <li><a id="aboutNav">About Us</a></li>
+                <li>
+                    <a>Our Menu</a>
+                    <ul>
+                        <li><a href="#englishMenu">English Menu</a></li>
+                        <li><a href="#mongolianMenu">Mongolian Menu</a></li>
+                        <li><a href="#indianMenu">Indian Menu</a></li>
+                        <li><a href="#japaneseMenu">Japanese Menu</a></li>
+                        <li><a href="desserts">Dessert</a></li>
+                        <li><a href="drinks">Drinks</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Contacts</a>
+                    <ul>
+                        <li><a href="https://www.instagram.com/trumaniac_hd/">Instagram</a></li>
+                        <li><a href="">Linked In</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Sources</a>
+                    <ul>
+                        <li><a href="https://www.familysearch.org/en/blog/traditional-english-food" target="_blank">Family Search: Traditional English Food</a></li>
+                        <li><a href="https://meanwhileinmongolia.com/traditional-mongolian-food/" target="_blank">Meanwhile in Mongolia: Traditional Mongolian Food</a></li>
+                        <li><a href="https://www.travelbuddies.info/mongolian-foods/" target="_blank">Travel Buddies: Mongolian Foods</a></li>
+                        <li><a href="#sources">More...</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         <div class="title">
@@ -72,7 +97,7 @@
                 </ul>
             </div>
             <h4>Traditional Mongolian Menu</h4>
-            <div class="subSection mongolianMenu">
+            <div class="subSection mongolianMenu" id="mongolianMenu">
                 <div class="menuItem mongolianMenu" id="horhog">
                     <h5>Khorkhog</h5>
                     <img src="Media/Mongolian/horhog.jpg" alt="Image of Horhog, a Traditional Mongolian BBQ dish">
@@ -112,7 +137,7 @@
                 </ul>
             </div>
             <h4>Traditional Indian Menu</h4>
-            <div class="subSection indianMenu">
+            <div class="subSection indianMenu" id="indianMenu">
                 <div class="menuItem indianMenu" id="tandoori">
                     <h5>Tandoori Chicken</h5>
                     <img src="Media/Indian/tandoorichicken.jpg" alt="Image of Tandoori Chicken">
@@ -152,7 +177,7 @@
                 </ul>
             </div>
             <h4>Traditional Japanese Menu</h4>
-            <div class="subSection japaneseMenu">
+            <div class="subSection japaneseMenu" id="japaneseMenu">
                 <div class="menuItem japaneseMenu" id="yakisoba">
                     <h5>Yakisoba</h5>
                     <img src="Media/Japanese/yakisoba.jpg" alt="Image of Yakisoba Stir Fried Noodles">
@@ -195,7 +220,7 @@
         <section class="section desserts" id="desserts">
             <h3>Traditional Desserts</h4>
             <p>Perhaps you'd like something on the sweeter side, or maybe want some more calories to wash down those other calories. Well look no further than our dessert menu, with lots of delicious choices!</p>
-            <div class="subsection desserts">
+            <div class="subSection desserts">
                 <div class="menuItem desserts" id="trifle">
                     <h5>Trifle</h5>
                     <img src="Media/Dessert/trifle.jpg" alt="Image of Trifle Dessert">
@@ -237,7 +262,7 @@
         <section class="section drinks" id="drinks">
             <h3>Drinks</h4>
             <p>(Additional costs will be listed next to the drink if any)</p>
-            <div class="subsection drinks">
+            <div class="subSection drinks">
                 <ul>
                     <li>Milk</li>
                     <li>Lemonade (Strawberry or Regular)</li>
@@ -259,12 +284,11 @@
         <p>Call us at 111-1111 if you have any questions or concerns, or to reserve a table!</p>
         <p>Our Social Media:</p>
         <div class="contacts social">
-            <img class="instagram">
-            <img class="facebook">
-            <img class="linkedIn">
+            <a href="https://www.instagram.com/trumaniac_hd/"><img class="instagram" src="Media/Contacts/instalogo.png" alt="Company Instagram Page"></a>
+            <a href="https://www.linkedin.com/in/kelton-truman-414215252"><img class="linkedIn" src="Media/Contacts/linkedinlogo.png" alt="Company LinkedIn Page"></a>
         </div>
     </div>
-    <div class="sources">
+    <div class="sources" id="sources">
         <h4>Sources</h4>
         <p>These are the websites that I've sourced the pictures for the food from, and a lot of the information regarding these dishes:</p>
         <ul>
@@ -284,4 +308,8 @@
         </ul>
         <p>Thank you for viewing this prototype website, and apologies for any mistakes regarding the food their descriptions, and their prices!</p>
     </div>
+
 </footer>
+<script src="./Scripts/jsQuery.js"></script>
+<script src="./Scripts/script.js"></script>
+</html>

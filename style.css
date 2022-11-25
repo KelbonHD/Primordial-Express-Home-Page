@@ -4,10 +4,67 @@
     color: rgb(250, 235, 215);
 }
 body {
-    background-color: rgb(57, 95, 55);
+    background-color: rgb(73, 41, 0);
+}
+nav {
+    font-family: "Xanh Mono";
+    font-size: 40px;
+    margin: 0;
+    padding: 20px 0;
+    list-style: none;
+    background: rgb(148, 58, 58);
+}
+nav a:hover {
+    text-decoration: none;
+    background-color: rgb(158, 149, 137);
+}
+nav ul li{
+    float: left;
+    display: block;
+    background: rgb(148, 58, 58);
+    position: relative;
+    margin: 0px 1px;
+    transform: translateY(-50px);
+    cursor: pointer;
+}
+nav ul li a {
+    display: block;
+    padding: 6px 10px 0 20px;
+    font-weight: 600;
+    height: 45px;
+    text-decoration: none;
+    color: rgb(250, 235, 215);
+    transition: .5s;
+}
+nav ul ul {
+    position: absolute;
+    left: 0;
+    display: none;
+    margin: 0 0 0 -1px;
+    padding: 0;
+    list-style: none;
+}
+nav ul ul li {
+    float: left;
+    border-top: 1px solid rgb(250, 235, 215);
+    width: 100%;
+    white-space: nowrap;
+    transform: translateY(0px);
+}
+nav ul ul a {
+    display: block;
+    height: 20px;
+    padding: 6px 5px;
+    color: rgb(250, 235, 215);
+    text-align: left;
+    font-size: 12px;
+    transition: .5s;
 }
 main {
     background-color: rgb(148, 58, 58);
+    max-width: 1700px;
+    margin: auto;
+    border: 5px solid rgb(250, 235, 215);
 }
 h1 {
     font-family: "Xanh Mono";
@@ -37,20 +94,15 @@ p {
     font-family: "Cabin";
     font-size: 15px;
 }
-.topPageNav ul {
-    list-style: none;
-    display: inline;
-}
-.topPageNav ul li {
-    display: inline;
-}
 .title span {
+    position: relative;
     background-color: rgb(250, 235, 215);
     max-width: 800px;
     height: 10px;
     display: block;
     margin: auto;
     transform: translate(0px, -45px);
+    z-index: 200;
 }
 .title h2 {
     transform: translate(0px, -50px);
@@ -76,6 +128,23 @@ p {
     flex-wrap: wrap;
     flex-basis: 50%;
 }
+.subSection.drinks { 
+    margin: auto;
+}
+.subSection.drinks ul {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    
+}
+.subSection.drinks ul li {
+    font-size: 20px;
+    padding: 10px 40px;
+    margin: auto;
+}
 .menuItem {
     max-width: 700px;
     min-width: 500px;
@@ -87,7 +156,7 @@ p {
 .sides {
     margin: auto;
     max-width: 1600px;
-    border: solid 5px rgb(250, 235, 215);
+    border: solid 3px rgb(250, 235, 215);
 }
 .sides ul {
     list-style: none;
@@ -107,4 +176,41 @@ p {
 }
 .sides.japaneseMenu ul li {
     font-size: 15px;
+}
+.contacts.social {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contacts.social a img {
+    width: 100px;
+    height: auto;
+    transition: .5s;
+}
+.contacts.social a img:hover {
+    width: 130px;
+    height: auto;
+}
+#aboutUs h3 {
+    font-size: 0px;
+    transition:  .5s;
+}
+#aboutUs h4 {
+    font-size: 0px;
+    transition: .5s;
+}
+#aboutUs p {
+    font-size: 0px;
+    transition: .5s;
+}
+#aboutUs.active h3 {
+    font-size: 35px;
+}
+#aboutUs.active h4 {
+    font-size: 20px;
+}
+#aboutUs.active p {
+    font-size: 18px;
 }
