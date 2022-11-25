@@ -1,11 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Xanh+Mono:ital@0;1&display=swap');
 * {
     text-align: center;
+    color: rgb(250, 235, 215);
+}
+body {
+    background-color: rgb(57, 95, 55);
+}
+main {
+    background-color: rgb(148, 58, 58);
 }
 h1 {
     font-family: "Xanh Mono";
     font-style: italic;
+    font-size: 70px;
+}
+h2 {
+    font-family: "Xanh Mono";
+    font-style: italic;
+    font-size: 25px;
+}
+h3 {
+    font-family: "Xanh Mono";
+    font-size: 35px;
+}
+h4 {
+    font-family: "Xanh Mono";
+    font-style: italic;
+    font-size: 20px;
+}
+h5 {
+    font-family: "Xanh Mono";
+    font-style: italic;
+    font-size: 20px;
+}
+p {
+    font-family: "Cabin";
+    font-size: 15px;
 }
 .topPageNav ul {
     list-style: none;
+    display: inline;
+}
+.topPageNav ul li {
+    display: inline;
+}
+.title span {
+    background-color: rgb(250, 235, 215);
+    max-width: 800px;
+    height: 10px;
+    display: block;
+    margin: auto;
+    transform: translate(0px, -45px);
+}
+.title h2 {
+    transform: translate(0px, -50px);
+}
+.section {
+    margin: auto;
+}
+.section.aboutUs {
+    width: auto;
+}
+.section.aboutUs h4 {
+    font-family: "Cabin";
+    font-style: italic;
+}
+.section.aboutUs p {
+    font-family: "Xanh Mono";
+    font-style: italic;
+}
+.subSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
+.menuItem {
+    max-width: 700px;
+    min-width: 500px;
+}
+.menuItem img {
+    height: 200px;
+    width: 300px;
+}
+.sides {
+    margin: auto;
+    max-width: 1600px;
+    border: solid 5px rgb(250, 235, 215);
+}
+.sides ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.sides ul li img {
+    width: 300px;
+    height: 200px;
+    padding: 10px 0px 20px 0px;
+}
+.sides ul li {
+    font-family: "Cabin";
+    font-size: 15px;
+}
+.sides.japaneseMenu ul li {
+    font-size: 15px;
 }
