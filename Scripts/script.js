@@ -7,9 +7,22 @@ $(document).ready(function () {
             $("ul", this).hide("fast");
         });
 });
+$(document).ready(function () {
+    $('#sources ul li').click(
+        function () {
+            $("li", this).show("fast");
+        }, function () {
+            $("li", this).hide("fast");
+        });
+});
 // End of copied code.
 const aboutNav = document.getElementById("aboutNav");
-const aboutUs = document.getElementById("aboutUs")
+const aboutUs = document.getElementById("aboutUs");
+const sourceExpand = document.getElementById("sourceExpand");
+const sourceList = document.getElementById("sourceList");
 aboutNav.addEventListener("click", () => {
     aboutUs.classList.toggle("active");
+});
+sourceExpand.addEventListener("click", () => {
+    sourceList.classList.toggle("active");
 });
