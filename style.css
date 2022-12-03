@@ -7,7 +7,7 @@ body {
     background-color: rgb(73, 41, 0);
 }
 nav {
-    font-family: "Xanh Mono";
+    font-family: "Xanh Mono", "Times New Roman";
     font-size: 40px;
     margin: 0;
     padding: 20px 0;
@@ -67,31 +67,30 @@ main {
     border: 5px solid rgb(250, 235, 215);
 }
 h1 {
-    font-family: "Xanh Mono";
+    font-family: "Xanh Mono", "Times New Roman";
     font-style: italic;
     font-size: 70px;
 }
 h2 {
-    font-family: "Xanh Mono";
+    font-family: "Xanh Mono", "Times New Roman";
     font-style: italic;
     font-size: 25px;
 }
 h3 {
-    font-family: "Xanh Mono";
+    font-family: "Xanh Mono", "Times New Roman";
     font-size: 35px;
 }
 h4 {
-    font-family: "Xanh Mono";
-    font-style: italic;
+    font-family: "Xanh Mono", "Times New Roman";
     font-size: 20px;
 }
 h5 {
-    font-family: "Xanh Mono";
+    font-family: "Xanh Mono", "Times New Roman";
     font-style: italic;
     font-size: 20px;
 }
 p {
-    font-family: "Cabin";
+    font-family: "Cabin", "Times New Roman";
     font-size: 15px;
 }
 .title span {
@@ -114,11 +113,11 @@ p {
     width: auto;
 }
 .section.aboutUs h4 {
-    font-family: "Cabin";
+    font-family: "Cabin", "Times New Roman";
     font-style: italic;
 }
 .section.aboutUs p {
-    font-family: "Xanh Mono";
+    font-family: "Xanh Mono", "Times New Roman";
     font-style: italic;
 }
 .subSection {
@@ -171,7 +170,7 @@ p {
     padding: 10px 0px 20px 0px;
 }
 .sides ul li {
-    font-family: "Cabin";
+    font-family: "Cabin", "Times New Roman";
     font-size: 15px;
 }
 .sides.japaneseMenu ul li {
@@ -196,7 +195,7 @@ p {
 .sources h4 {
     margin: auto;
     height: 50px;
-    font-family: "Cabin";
+    font-family: "Cabin", "Times New Roman";
     cursor: pointer;
     transition: .5s;
 }
@@ -229,7 +228,7 @@ p {
     font-size: 18px;
 }
 #sourceList {
-    font-family: "Cabin";
+    font-family: "Cabin", "Times New Roman";
     font-size: 0px;
     list-style: none;
     display: block;
@@ -252,4 +251,76 @@ p {
     opacity: 1;
     height: auto;
     font-size: 20px;
+}
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 80px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 50px;
+    }
+    h4 {
+        font-size: 50px;
+    }
+    h5 {
+        font-size: 35px;
+    }
+    p {
+        font-size: 20px;
+    }
+    nav ul li {
+        font-size: 50px;
+        border-left: 2px solid rgb(250, 235, 215);
+        border-right: 2px solid rgb(250, 235, 215);;
+    }
+    nav ul li a {
+        padding-bottom: 10px;
+    }
+    nav ul ul a{
+        font-size: 30px;
+        height: 40px;
+    }
+    .title span {
+        display: none;
+    }
+    .menuItem img {
+        height: 400px;
+        width: 600px;
+    }
+    .sides {
+        max-width: 800px;
+        border: solid 6px rgb(250, 235, 215);
+    }
+    .sides ul li {
+        font-size: 50px;    
+    }
+    .sides ul li img {
+        width: 600px;
+        height: 400px;
+    }
+    .subSection.drinks {
+        height: auto;
+        max-width: 300px;
+    }
+    .subSection.drinks ul li {
+        font-size: 50px;
+    }
+    #navSources ul {
+        transform: translateX(-545px);
+    }
+    #title {
+        transition: .5s;
+    }
+    #title.activeMenu {
+        padding-top: 300px;
+    }
+    #title.activeContacts {
+        padding-top: 50px;
+    }
+    #title.activeSources {
+        padding-top: 200px;
+    }
 }
