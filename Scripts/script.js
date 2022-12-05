@@ -55,4 +55,3 @@ $(document).ready(function () {
             title.classList.remove('activeSources');
         });
 });
-//End of helper code

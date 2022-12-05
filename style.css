@@ -13,6 +13,11 @@ nav {
     padding: 20px 0;
     list-style: none;
     background: rgb(148, 58, 58);
+    border: 5px solid rgb(250, 235, 215);
+    transition: .5s;
+}
+nav:hover {
+    border-bottom: rgba(0, 0, 0, 0);
 }
 nav a:hover {
     text-decoration: none;
@@ -272,9 +277,9 @@ p {
         font-size: 20px;
     }
     nav ul li {
-        font-size: 50px;
+        font-size: 48px;
         border-left: 2px solid rgb(250, 235, 215);
-        border-right: 2px solid rgb(250, 235, 215);;
+        border-right: 2px solid rgb(250, 235, 215);
     }
     nav ul li a {
         padding-bottom: 10px;
@@ -308,8 +313,11 @@ p {
     .subSection.drinks ul li {
         font-size: 50px;
     }
+    .contacts.social a img {
+        width: 200px;
+    }
     #navSources ul {
-        transform: translateX(-545px);
+        transform: translateX(-550px);
     }
     #title {
         transition: .5s;
@@ -322,5 +330,14 @@ p {
     }
     #title.activeSources {
         padding-top: 200px;
+    }
+    #sourceList.active {
+        font-size: 40px;
+    }
+    #sourceList.active li {
+        padding-top: 20px;
+    }
+    #sourceList.active li a {
+        text-decoration: underline;
     }
 }
